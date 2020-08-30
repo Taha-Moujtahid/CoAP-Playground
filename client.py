@@ -19,9 +19,6 @@ def runMethod(method):
 while True:
     method = input("METHOD: ").upper()
     path = input("PATH: ")
-    client = HelperClient(server=('127.0.0.1', 5683)) # WAIT!!! IS THE IP SET CORRECTLY?
+    client = HelperClient(server=('192.168.0.145', 5683)) # WAIT!!! IS THE IP SET CORRECTLY?
     runMethod(method)
     client.stop()
-    
-
-
